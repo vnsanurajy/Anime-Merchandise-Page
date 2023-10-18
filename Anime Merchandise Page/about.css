@@ -1,0 +1,180 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+/* HTML RESETS */
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV-BAR */
+
+.logo {
+  float: left;
+  color: white;
+}
+
+.navbar {
+  width: 85%;
+  margin: 0px auto;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5rem;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-items {
+  float: right;
+  list-style: none;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  color: red;
+  border-bottom: 2px solid black;
+  padding-bottom: 6px;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 2px;
+  padding: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 4.6rem;
+  right: 12rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background-color: black;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px;
+  /* margin: 2px; */
+}
+
+@media screen and (max-width: 650px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    /* display: flex; */
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/* SECTION  */
+
+.section-image {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("demon-slayer.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 40px;
+  font-size: 150%;
+  color: #f4f4f4;
+}
+
+.header
+{
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.right-section {
+  float: right;
+}
+
+.left-section {
+  float: left;
+}
+
+.left-section , .right-section
+{
+  width: 50%;
+  padding: 5%;
+  font-family: 'Twinkle Star', cursive;
+  font-weight: 700;
+}
+
+.section-div{
+  margin: 10rem 0;
+}
+
+.left-section p, .right-section p
+{
+  margin: 2rem;
+  text-align: center;
+}
+
+.left-section h2, .right-section h2
+{
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  background-color: #263238;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  font-size: 150%;
+}
+
+.links i {
+  margin: 2rem;
+}

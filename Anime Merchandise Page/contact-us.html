@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Merchendise | Welcome</title>
+    <link rel="stylesheet" href="contact-us.css">
+    <script src="contact-us.js"></script>
+    <script src="https://kit.fontawesome.com/f7598733dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="section">
+        <nav class="navbar">
+            <div class="brand">
+                <h1 class="logo">OP</h1>
+            </div>
+            <button onclick="fn()" class="toggle-button" id="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="navbar-links" id="navbar-links">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="home.html">Home</a></li>
+                    <li class="nav-item"><a href="signup.html">Sign Up</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="contact-info">
+            <div class="container">
+                <div class="form">
+                    <h2>Reach us out by</h2>
+                    <br><br>
+                    <input type="text" placeholder="Your email address" id="email">
+                    <br>
+                    <label id="elabel" style="color: red; visibility: hidden;">Valid Email</label>
+                    <br><br><br>
+                    <textarea name="Query" id="Query" cols="30" rows="10" placeholder="Enter your Query"></textarea>
+                    <br><br><br>
+                    <button type="button" onclick="validate()">Submit your query</button>
+                </div>
+            </div>
+            <div class="contact-links">
+                CONTACT LINKS
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="links">
+            <i class="fab fa-facebook fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fab fa-twitter fa-3x"></i>
+        </div>
+        <p> &copy; All rights reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Merchendise | Sign In</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+    <script src="https://kit.fontawesome.com/f7598733dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <h1 class="logo">OP</h1>
+            </div>
+            <button onclick="fn()" class="toggle-button" id="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="navbar-links" id="navbar-links">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="home.html">Home</a></li>
+                    <li class="nav-item"><a href="signup.html">Sign Up</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="signup-form">
+            <form action="">
+                <input type="text" placeholder="Name" id="Name" required>
+                <br>
+                <label id="nlabel" style="color: red; visibility: hidden; background-color: black;">Invalid
+                    Username</label>
+                <br>
+                <input type="text" id="phn" placeholder="Mobile Number">
+                <br>
+                <label id="mlabel" style="color: red; visibility: hidden; background-color: black;">Invalid
+                    Password</label>
+                <br>
+                <input type="text" placeholder="Your email address" id="email">
+                <br>
+                <label id="elabel" style="color: red; visibility: hidden;">Valid Email</label>
+                <input type="text" placeholder="Username" id="username">
+                <br>
+                <label id="ulabel" style="color: red; visibility: hidden; background-color: black;">Invalid
+                    Username</label>
+                <br>
+                <input type="password" id="password" placeholder="Password">
+                <br>
+                <label id="plabel" style="color: red; visibility: hidden; background-color: black;">Invalid
+                    Password</label>
+                <br>
+                <input type="password" id="cpassword" placeholder="Confirm password" required>
+                <br>
+                <label id="cplabel" style="color: red; visibility: hidden; background-color: black;">Invalid
+                    Password</label>
+                <br>
+                <button type="button" onclick="validate()">Login</button>
+                <br>
+                <a href="#">Already a user? Login</a>
+            </form>
+        </div>
+    </header>
+
+
+    <footer>
+        <div class="links">
+            <i class="fab fa-facebook fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fab fa-twitter fa-3x"></i>
+        </div>
+        <p> &copy; All rights reserved</p>
+    </footer>
+
+
+</body>
+
+
+</html>
